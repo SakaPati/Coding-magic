@@ -1,0 +1,70 @@
+footer .container {
+  display: flex;
+  align-items: center;
+  height: 13.75rem;
+}
+
+.logo-link {
+  width: 10.312rem;
+  height: 4.375rem;
+  display: flex;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 4.562rem;
+  height: 1.25rem;
+}
+
+.logo-part {
+  font-family: 'Sacramento';
+  width: 3.25rem;
+  height: 1.687rem;
+  margin-left: 1rem;
+}
+
+.contact-list {
+  font-family: 'Montserrat Alternates';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-right: 11.687rem;
+  margin-left: 11.562rem;
+}
+
+.subscribe input {
+  font-family: 'Montserrat Alternates';
+  font-weight: 400;
+  font-size: 12px;
+  width: 12.75rem;
+  height: 2.187rem;
+  color: var(--footerInputText);
+  background-color: var(--footerInputBg);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.subscribe-btn {
+  font-family: 'Montserrat Alternates';
+  font-weight: 400;
+  font-size: 12px;
+  width: 107px;
+  height: 35px;
+  color: var(--footerBtnText);
+  background-color: var(--footerBtnBg);
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 2.25rem;
+}
+
+.subscribe-rules {
+  font-family: 'Montserrat Alternates';
+  font-weight: 400;
+  font-size: 6px;
+  color: #000;
+  margin-top: 1.125rem;
+}
