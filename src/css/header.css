@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  padding: 21px 175px;
+  align-items: center;
+}
+.header-logo {
+  width: 5.81rem;
+  height: 2.38rem;
+}
+.logo-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 81px;
+  margin-right: 361px;
+}
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.item-link {
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  color: #000;
+}
+.header-settings {
+  display: flex;
+  align-items: center;
+}
+.settings-item:not(:last-child) {
+  margin-right: 3.125rem;
+}
+.setting-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: right;
+  color: #000;
+}
