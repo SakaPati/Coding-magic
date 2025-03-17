@@ -23,8 +23,8 @@
       href="https://fonts.googleapis.com/css?family=Sacramento:regular"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Coding-magic/assets/index-DoVXpQEV.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-CchYAlK_.css">
+    <script type="module" crossorigin src="/Coding-magic/assets/index-TQkEuH2m.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-B-nZ0_dC.css">
   </head>
   <body>
     <header>
@@ -48,20 +48,22 @@
     <section class="hero">
   <div class="container">
     <h1 class="hero-title">Популярні інетрактивні ігри</h1>
-    <div class="game">
-      <h2 class="section-title">Перевір в який рік ти народився</h2>
-      <div class="game-block">
+
+    <h2 class="section-title">Перевір в який рік ти народився</h2>
+    <div class="game-block">
+      <div class="input-wrap">
         <input
           type="text"
           name=""
           id="age"
           placeholder="Введіть рік народження"
+          class="game-input"
         />
         <button type="button" class="game-btn">
           <img src="../icons/search-icon.svg" alt="" />
         </button>
-        <!-- <p class="success-text">Ви народилися у високосний рік!</p> -->
       </div>
+      <!-- <p class="success-text">Ви народилися у високосний рік!</p> -->
     </div>
   </div>
 </section>
@@ -70,10 +72,18 @@
   <div class="container">
     <h2 class="section-title">Вгадай число, яке загадав комп’ютер</h2>
     <div class="game-block">
-      <input type="text" name="" id="age" placeholder="Введіть число" />
-      <button type="button" class="game-btn">
-        <img src="../icons/search-icon.svg" alt="" />
-      </button>
+      <div class="random-wrap">
+        <input
+          type="text"
+          name=""
+          id="age"
+          placeholder="Введіть число"
+          class="game-input number-input"
+        />
+        <button type="button" class="btn-number">
+          <img src="../icons/search-icon.svg" alt="" />
+        </button>
+      </div>
       <!-- <p class="success-text">Вітаю, ви вгадали число! (number)</p> -->
     </div>
   </div>
@@ -101,24 +111,34 @@
   <div class="container">
     <h2 class="section-title">Калькулятор</h2>
     <div class="section-block">
-      <input type="text" id="number" placeholder="Введіть число" />
-      <ul class="section-list">
-        <li class="section-item">
+      <input
+        type="text"
+        id="number"
+        placeholder="Введіть число"
+        class="calculate-input"
+      />
+      <ul class="calculate-list">
+        <li class="calculate-item">
           <button type="button" class="calculate-opparation">+</button>
         </li>
-        <li class="section-item">
+        <li class="calculate-item">
           <button type="button" class="calculate-opparation">*</button>
         </li>
-        <li class="section-item">
+        <li class="calculate-item">
           <button type="button" class="calculate-opparation">-</button>
         </li>
-        <li class="section-item">
+        <li class="calculate-item">
           <button type="button" class="calculate-opparation">/</button>
         </li>
       </ul>
-      <input type="text" id="number" placeholder="Введіть число" />
+      <input
+        type="text"
+        id="number"
+        placeholder="Введіть число"
+        class="calculate-input"
+      />
       <button type="button" class="calculate-opparation">=</button>
-      <input type="text" placeholder="Результат" />
+      <input type="text" placeholder="Результат" class="calculate-input" />
     </div>
   </div>
 </section>
