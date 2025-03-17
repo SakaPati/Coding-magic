@@ -1,0 +1,1 @@
+import { onModalClose } from './js/welcome';

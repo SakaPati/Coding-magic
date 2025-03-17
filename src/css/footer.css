@@ -1,4 +1,4 @@
-footer .container {
+ .container {
   display: flex;
   align-items: center;
   height: 13.75rem;
@@ -40,8 +40,8 @@ footer .container {
   font-size: 12px;
   width: 12.75rem;
   height: 2.187rem;
-  color: var(--footerInputText);
-  background-color: var(--footerInputBg);
+  color: var(--InputText);
+  background-color: var(--InputBg);
   border: none;
   outline: none;
   border-radius: 20px;
@@ -54,8 +54,8 @@ footer .container {
   font-size: 12px;
   width: 107px;
   height: 35px;
-  color: var(--footerBtnText);
-  background-color: var(--footerBtnBg);
+  color: var(--BtnText);
+  background-color: var(--BtnBg);
   border-radius: 20px;
   padding: 10px;
   margin-left: 2.25rem;

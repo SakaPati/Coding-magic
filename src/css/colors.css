@@ -1,6 +1,6 @@
 :root{
-    --footerInputText: #7e7e7e;
-    --footerInputBg: #d7d7d7;
-    --footerBtnText: #fff;
-    --footerBtnBg: #000;
+    --InputText: #7e7e7e;
+    --InputBg: #d7d7d7;
+    --BtnText: #fff;
+    --BtnBg: #000;
 }
