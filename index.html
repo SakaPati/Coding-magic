@@ -23,10 +23,10 @@
       href="https://fonts.googleapis.com/css?family=Sacramento:regular"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Coding-magic/assets/index-TQkEuH2m.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-B-nZ0_dC.css">
+    <script type="module" crossorigin src="/Coding-magic/assets/index-B8kUpS8d.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-ivIu7kcy.css">
   </head>
-  <body>
+  <body class="show-modal">
     <header>
   <a href="./header.html" class="logo-link header-logo">
     <img src="../icons/logo-icon.svg" alt="" />
@@ -265,6 +265,29 @@
     </div>
   </div>
 </footer>
+
+    <section class="welcome">
+  <div class="backdrop js-backdrop">
+    <div class="modal">
+      <button type="button" data-action="modal-close">
+        <img
+          src="../img/close-btn.png"
+          alt="Кнопка чтобы закрыть модальное окно"
+        />
+      </button>
+      <div class="welcomeContainer">
+        <p class="welcomeText">
+          <span class="welcomeSpan">Привіт!</span>Ви потрапили на сайт
+          інтерактивних ігор та завдань <br />Надіємось, що вам сподобається і
+          ви отримаєте позитивні емоції! Бажаємо Вам гарно провести час!
+        </p>
+        <p class="welcomeText">Введіть своє ім’я:<span id="name"></span></p>
+        <input type="text" placeholder="Ваше ім’я..." class="welcomeInput" />
+        <button type="button" class="welcomeBtn">Зберегти</button>
+      </div>
+    </div>
+  </div>
+</section>
 
   </body>
 </html>
