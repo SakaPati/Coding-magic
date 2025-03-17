@@ -8,6 +8,10 @@
 @import url('./footer.css');
 @import url('./colors.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./random.css');
+@import url('./stone-knives-papyrus.css');
+@import url('./calculate.css');
 
 :root {
   --font-family: 'Montserrat Alternates', sans-serif;
@@ -31,5 +35,5 @@
   width: 90rem;
   margin: 0 auto;
   padding: 0 0.938rem;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }

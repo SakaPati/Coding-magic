@@ -1,0 +1,42 @@
+.stone-knives-papyrus::after {
+  content: '';
+  display: block;
+  width: 33.5rem;
+  height: 0.125rem;
+  background-color: #000;
+  margin: 2.25rem auto;
+}
+.section-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 16rem;
+  margin: 2.25rem auto;
+}
+.section-item {
+  display: flex;
+  align-items: center;
+  border-radius: 1.25rem;
+  padding: 0.62rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #000;
+}
+.section-item:hover {
+  cursor: pointer;
+}
+.section-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #000;
+  border-radius: 1.25rem;
+  padding: 0.62rem 1.25rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #fff;
+  border: none;
+  height: 2.1875rem;
+}
