@@ -7,10 +7,18 @@
 @import url('./reset.css');
 @import url('./footer.css');
 @import url('./colors.css');
+
 @import url('./welcome.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./random.css');
+@import url('./stone-knives-papyrus.css');
+@import url('./calculate.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Montserrat Alternates', sans-serif;
+  --second-family: 'Inter', sans-serif;
+  --third-family: 'Sacramento', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -25,12 +33,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+
 body{
   font-family: 'Montserrat Alternates';
 }
-
-.container{
+.container {
   width: 90rem;
   margin: 0 auto;
-  outline: 1px solid red;
+  padding: 0 0.938rem;
+  /* outline: 1px solid red; */
 }
