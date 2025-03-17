@@ -7,6 +7,7 @@
 @import url('./reset.css');
 @import url('./footer.css');
 @import url('./colors.css');
+@import url('./welcome.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,6 +23,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body{
+  font-family: 'Montserrat Alternates';
 }
 
 .container{

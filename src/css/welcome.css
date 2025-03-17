@@ -1,0 +1,137 @@
+body.show-modal .backdrop {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+body.show-modal .modal {
+  transform: scale(1);
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 36rem;
+  border-radius: 1.25rem;
+  padding: 2.875rem 1.875rem;
+  background-color: #fff;
+
+  transform: scale(1.1);
+  transition: transform 200ms;
+}
+
+[data-action='modal-close'] {
+  position: absolute;
+  top: 30px;
+  left: 531px;
+  border: none;
+  background-color: transparent;
+}
+[data-action='modal-close'] img {
+  width: 15px;
+  height: 15px;
+}
+.welcomeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 24.562rem;
+}
+.welcomeText:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+}
+
+.welcomeText:nth-child(2) {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 2.625rem;
+  text-align: center;
+}
+
+.welcomeInput {
+  width: 10.562rem;
+  height: 2.187rem;
+  border: none;
+  outline: none;
+  color: var(--InputText);
+  background-color: var(--InputBg);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1.125rem 0;
+}
+
+.welcomeText:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: 12.125rem;
+  left: 2.5625rem;
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url(../img/sword.png);
+}
+.welcomeText:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top: 12.125rem;
+  left: 30.0625rem;
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url(../img/game-developmen.png);
+}
+
+.welcomeBtn {
+  color: var(--BtnText);
+  background-color: var(--BtnBg);
+  border-radius: 1.25rem;
+  padding: .625rem 1.25rem;
+  width: 6.562rem;
+  height: 2.187rem;
+  font-weight: 400;
+  font-size: 12px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.welcomeBtn::before {
+  content: '';
+  position: absolute;
+  top: 16.875rem;
+  left: 5.3125rem;
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url(../img/puzzle.png);
+}
+.welcomeBtn::after {
+  content: '';
+  position: absolute;
+  top: 16.875rem;
+  left: 27.5rem;
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url(../img/tic-tac-toe.png);
+}
