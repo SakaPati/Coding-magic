@@ -10,6 +10,7 @@
   width: 10rem;
   padding: 0.62rem 2.81rem 0.62rem 0.62rem;
 }
+
 .random-wrap {
   position: relative;
 }
@@ -25,4 +26,8 @@
   border: none;
   border-radius: 0 1.25rem 1.25rem 0;
   background-color: #000;
+}
+.btn-icon {
+  width: 0.9375rem;
+  height: 0.9375rem;
 }
