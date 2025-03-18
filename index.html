@@ -23,8 +23,8 @@
       href="https://fonts.googleapis.com/css?family=Sacramento:regular"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Coding-magic/assets/index-B8kUpS8d.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-ivIu7kcy.css">
+    <script type="module" crossorigin src="/Coding-magic/assets/index-BWINXLYM.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-DhSWbr9d.css">
   </head>
   <body class="show-modal">
     <header>
@@ -41,7 +41,9 @@
     <li class="settings-item">
       <img src="../img/white-theme.png" alt="" />
     </li>
-    <li class="settings-item"><p class="setting-text">Вітаємо, User</p></li>
+    <li class="settings-item">
+      <p class="setting-text">Вітаємо, <span class="result-user">User</span></p>
+    </li>
   </ul>
 </header>
 
@@ -60,7 +62,7 @@
           class="game-input"
         />
         <button type="button" class="game-btn">
-          <img src="../icons/search-icon.svg" alt="" />
+          <img src="../icons/search-icon.svg" alt="" class="btn-icon" />
         </button>
       </div>
       <!-- <p class="success-text">Ви народилися у високосний рік!</p> -->
@@ -81,7 +83,7 @@
           class="game-input number-input"
         />
         <button type="button" class="btn-number">
-          <img src="../icons/search-icon.svg" alt="" />
+          <img src="../icons/search-icon.svg" alt="" class="btn-icon" />
         </button>
       </div>
       <!-- <p class="success-text">Вітаю, ви вгадали число! (number)</p> -->
@@ -110,7 +112,7 @@
     <section class="calculate">
   <div class="container">
     <h2 class="section-title">Калькулятор</h2>
-    <div class="section-block">
+    <div class="section-block calculate-block">
       <input
         type="text"
         id="number"
@@ -137,8 +139,12 @@
         placeholder="Введіть число"
         class="calculate-input"
       />
-      <button type="button" class="calculate-opparation">=</button>
-      <input type="text" placeholder="Результат" class="calculate-input" />
+      <button type="button" class="calculate-opparation result">=</button>
+      <input
+        type="text"
+        placeholder="Результат"
+        class="calculate-input result-input"
+      />
     </div>
   </div>
 </section>
@@ -146,11 +152,27 @@
     <section class="calculate-time">
   <div class="container">
     <h2 class="section-title">Калькулятор часу</h2>
-    <div class="section-block">
-      <input type="text" id="number" placeholder="Введіть число" />
-      <button type="button" class="game-btn">
-        <img src="../icons/search-icon.svg" alt="" />
-      </button>
+    <div class="calculate-time-block">
+      <div class="input-wrap">
+        <input
+          type="text"
+          id="number"
+          placeholder="Введіть число"
+          class="time-input"
+        />
+        <button type="button" class="calculate-time-btn">
+          <img src="../icons/search-icon.svg" alt="" class="btn-icon" />
+        </button>
+      </div>
+      <svg
+        width="100"
+        height="2"
+        viewBox="0 0 100 2"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 1H100" stroke="black" stroke-dasharray="2 2" />
+      </svg>
       <!--Єто по задумке должен быть результат -->
       <span class="result"></span>
     </div>
@@ -170,52 +192,117 @@
     <section class="biggest-number">
   <div class="container">
     <h2 class="section-title">Введіть 3 числа</h2>
-    <input type="text" placeholder="Введіть число" />
-    <input type="text" placeholder="Введіть число" />
-    <input type="text" placeholder="Введіть число" />
-    <p class="result">Найбільше число, яке ви ввели <span></span></p>
+    <ul class="b-list">
+      <li class="b-item">
+        <input
+          type="text"
+          placeholder="Введіть число"
+          class="biggest-number-input"
+        />
+      </li>
+      <li class="b-item">
+        <input
+          type="text"
+          placeholder="Введіть число"
+          class="biggest-number-input"
+        />
+      </li>
+      <li class="b-item">
+        <input
+          type="text"
+          placeholder="Введіть число"
+          class="biggest-number-input"
+        />
+      </li>
+    </ul>
+
+    <p class="result-num">Найбільше число, яке ви ввели <span></span></p>
   </div>
 </section>
 
     <section class="team">
-  <div class="container">
+  <div class="container team-container">
     <h2 class="section-title">Наша команда</h2>
-    <img src="../icons/arrow-icon.svg" alt="" />
-    <ul class="team-list">
-      <li class="team-item">
-        <img src="" alt="" />
-        <p class="name">Денис</p>
-        <p class="work">Team-lead</p>
-      </li>
-      <li class="team-item">
-        <img src="" alt="" />
-        <p class="name">Максим</p>
-        <p class="work">Scram master</p>
-      </li>
-      <li class="team-item">
-        <img src="" alt="" />
-        <p class="name">Артем</p>
-        <p class="work">Участник</p>
-      </li>
-      <li class="team-item">
-        <img src="" alt="" />
-        <p class="name">Костя</p>
-        <p class="work">Участник</p>
-      </li>
-      <li class="team-item">
-        <img src="" alt="" />
-        <p class="name">Влад</p>
-        <p class="work">Участник</p>
-      </li>
-    </ul>
+    <!-- <img src="../icons/arrow-icon.svg" alt="" /> -->
+    <div class="team-box">
+      <svg
+        width="52"
+        height="102"
+        viewBox="0 0 52 102"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="next-icon"
+      >
+        <path d="M1 1L51 51L1 101" stroke="black" />
+      </svg>
+      <ul class="team-list">
+        <li class="team-item">
+          <img
+            src="../img/denis.png"
+            alt=""
+            width="150"
+            height="150"
+            class="team-img"
+          />
+          <p class="name">Денис</p>
+          <p class="work">Team-lead</p>
+        </li>
+        <li class="team-item">
+          <img
+            src="../img/maksim.jpg"
+            alt=""
+            width="150"
+            height="150"
+            class="team-img"
+          />
+          <p class="name">Максим</p>
+          <p class="work">Scram master</p>
+        </li>
+        <li class="team-item">
+          <img src="../img/" alt="" width="150" height="150" class="team-img" />
+          <p class="name">Артем</p>
+          <p class="work">Участник</p>
+        </li>
+        <li class="team-item">
+          <img
+            src="../img/kostya.jpg"
+            alt=""
+            width="150"
+            height="150"
+            class="team-img"
+          />
+          <p class="name">Костя</p>
+          <p class="work">Участник</p>
+        </li>
+        <li class="team-item">
+          <img
+            src="../img/vlad.jpg"
+            alt=""
+            width="150"
+            height="150"
+            class="team-img"
+          />
+          <p class="name">Влад</p>
+          <p class="work">Участник</p>
+        </li>
+      </ul>
+      <svg
+        width="52"
+        height="102"
+        viewBox="0 0 52 102"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1 1L51 51L1 101" stroke="black" />
+      </svg>
+    </div>
     <ul class="next-icons">
-      <li class="next-item"><img src="../img/switch-btn.png" alt="" /></li>
-      <li class="next-item"><img src="../img/switch-btn.png" alt="" /></li>
-      <li class="next-item"><img src="../img/switch-btn.png" alt="" /></li>
-      <li class="next-item"><img src="../img/switch-btn.png" alt="" /></li>
-      <li class="next-item"><img src="../img/switch-btn.png" alt="" /></li>
+      <li class="next-item"><span class="next-btn"></span></li>
+      <li class="next-item"><span class="next-btn"></span></li>
+      <li class="next-item"><span class="next-btn"></span></li>
+      <li class="next-item"><span class="next-btn"></span></li>
+      <li class="next-item"><span class="next-btn"></span></li>
     </ul>
-    <img src="../icons/arrow-icon.svg" alt="" />
   </div>
 </section>
 
@@ -240,7 +327,7 @@
 </section>
 
     <footer class="footer">
-  <div class="container">
+  <div class="container footer-container">
     <a href="./header.html" class="logo-link">
       <img src="../icons/logo-icon.svg" alt="" />
       <p class="logo-text">Coding<span class="logo-part">Magic</span></p>
