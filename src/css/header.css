@@ -23,7 +23,6 @@ header {
   margin-right: 50px;
 }
 .item-link {
-  font-family: var(--font-family);
   font-size: 0.75rem;
   color: #000;
 }
@@ -35,7 +34,6 @@ header {
   margin-right: 3.125rem;
 }
 .setting-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.75rem;
   text-align: right;

@@ -1,0 +1,19 @@
+.football::after {
+  content: '';
+  display: block;
+  width: 33.5rem;
+  height: 0.125rem;
+  background-color: #000;
+  margin: 2.25rem auto;
+}
+.field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 45rem;
+  height: 13.75rem;
+  border: 2px solid #000;
+  border-radius: 2.31rem;
+  background: #5abb58;
+}
