@@ -23,10 +23,10 @@
       href="https://fonts.googleapis.com/css?family=Sacramento:regular"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Coding-magic/assets/index-BWINXLYM.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-DhSWbr9d.css">
+    <script type="module" crossorigin src="/Coding-magic/assets/index-CrKUTRWx.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-BYVAfXTa.css">
   </head>
-  <body class="show-modal">
+  <body>
     <header>
   <a href="./header.html" class="logo-link header-logo">
     <img src="../icons/logo-icon.svg" alt="" />
@@ -73,11 +73,10 @@
     <section class="random-number">
   <div class="container">
     <h2 class="section-title">Вгадай число, яке загадав комп’ютер</h2>
-    <div class="game-block">
+    <div class="game-block random-game">
       <div class="random-wrap">
         <input
           type="text"
-          name=""
           id="age"
           placeholder="Введіть число"
           class="game-input number-input"
@@ -86,7 +85,7 @@
           <img src="../icons/search-icon.svg" alt="" class="btn-icon" />
         </button>
       </div>
-      <!-- <p class="success-text">Вітаю, ви вгадали число! (number)</p> -->
+      <p class="success-text"></p>
     </div>
   </div>
 </section>
@@ -371,6 +370,22 @@
         <p class="welcomeText">Введіть своє ім’я:<span id="name"></span></p>
         <input type="text" placeholder="Ваше ім’я..." class="welcomeInput" />
         <button type="button" class="welcomeBtn">Зберегти</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="thxYou">
+  <div class="thxBackdrop js-backdrop">
+    <div class="thxModal">
+      <button type="button" data-action="closeThxModal">
+        <img
+          src="../img/close-btn.png"
+          alt="Кнопка чтобы закрыть модальное окно"
+        />
+      </button>
+      <div class="thxContainer">
+        <p class="thxText">Дякую за підписку!</p>
       </div>
     </div>
   </div>
