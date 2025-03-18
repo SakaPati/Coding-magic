@@ -1,0 +1,26 @@
+.erorContainer{
+    position: relative;
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.erorDiv{
+    position: absolute;
+    top: -450px;
+    left: 9%;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.closeBtn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}

@@ -9,6 +9,14 @@
 .number-input {
   width: 10rem;
   padding: 0.62rem 2.81rem 0.62rem 0.62rem;
+  outline: none;
+}
+
+.random-game {
+  display: flex;
+  justify-content: space-between;
+  width: 576px;
+  margin: 0 auto;
 }
 
 .random-wrap {
@@ -30,4 +38,10 @@
 .btn-icon {
   width: 0.9375rem;
   height: 0.9375rem;
+}
+
+.success-text {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--WinGameColor);
 }
