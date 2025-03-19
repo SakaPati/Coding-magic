@@ -23,8 +23,8 @@
       href="https://fonts.googleapis.com/css?family=Sacramento:regular"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Coding-magic/assets/index-S19JYZHd.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-BE0baUgt.css">
+    <script type="module" crossorigin src="/Coding-magic/assets/index-DI0VSUWh.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic/assets/index-Cxh2WCxN.css">
   </head>
   <body>
     <header>
@@ -138,11 +138,11 @@
           placeholder="Введіть рік народження"
           class="game-input"
         />
-        <button type="button" class="game-btn">
+        <button type="button" class="game-btn" id="age-res">
           <img src="../icons/search-icon.svg" alt="" class="btn-icon" />
         </button>
       </div>
-      <!-- <p class="success-text">Ви народилися у високосний рік!</p> -->
+      <p class="age-success-text"></p>
     </div>
   </div>
 </section>
@@ -170,18 +170,29 @@
     <section class="stone-knives-papyrus">
   <div class="container">
     <h2 class="section-title">Камінь - ножиці - папір</h2>
-    <ul class="section-list">
-      <li class="section-item">
-        <img src="../img/stone.png" alt="" />
-      </li>
-      <li class="section-item">
-        <img src="../img/scissors.png" alt="" />
-      </li>
-      <li class="section-item">
-        <img src="../img/paper.png" alt="" />
-      </li>
-    </ul>
-    <button type="button" class="section-btn btn">Варіант комп’ютера</button>
+    <div class="wrap">
+      <ul class="section-list">
+        <li class="section-item" id="stone">
+          <img src="../img/stone.png" alt="" />
+        </li>
+        <li class="section-item" id="scissors">
+          <img src="../img/scissors.png" alt="" />
+        </li>
+        <li class="section-item" id="paper">
+          <img src="../img/paper.png" alt="" />
+        </li>
+      </ul>
+      <p class="result-board">
+        Рахунок:
+        <span class="wrapper"
+          >Комп’ютер - <span id="robot"></span> Ви - <span id="human"></span
+        ></span>
+      </p>
+    </div>
+    <button type="button" class="section-btn btn" id="variant-comp">
+      Варіант комп’ютера
+    </button>
+    <span class="correctness"></span>
   </div>
 </section>
 
