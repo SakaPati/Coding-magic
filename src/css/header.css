@@ -1,7 +1,7 @@
 header {
-  width: 90rem;
+  width: 68.125rem;
   display: flex;
-  padding: 21px 175px;
+  padding: 21px 0px;
   margin: 0 auto;
   align-items: center;
 }
@@ -26,7 +26,7 @@ header {
 }
 .item-link {
   font-size: 0.75rem;
-  color: #000;
+  /* color: #000; */
 }
 .header-settings {
   display: flex;
@@ -39,5 +39,53 @@ header {
   font-weight: 400;
   font-size: 0.75rem;
   text-align: right;
-  color: #000;
+  /* color: #000; */
+}
+
+/* Кнопка для изменения темы */
+
+.themeBtn{
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  border: none;
+  border-radius: 11px;
+  outline: none;
+  background-color: #7a7a7a;
+}
+
+.themeBtn.Dark .theme-light{
+  opacity: 0;
+  transform: translateX(21px);
+}
+.themeBtn.Dark .theme-dark{
+  opacity: 1;
+  transform: translateX(21px);
+}
+
+.theme-light{
+  position: absolute;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: transform 1000ms, opacity 800ms;
+  width: 1.1875rem;
+  height: 1.1875rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1px;
+  outline: .5px solid black;
+}
+
+.theme-dark{
+  opacity: 0;
+  transform: translateX(0px);
+  transition: transform 1000ms, opacity 800ms;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 1px;
 }

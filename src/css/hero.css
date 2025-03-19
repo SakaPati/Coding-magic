@@ -3,7 +3,7 @@
   display: block;
   width: 33.5rem;
   height: 0.125rem;
-  background-color: #000;
+  /* background-color: #000; */
   margin: 2.25rem auto;
 }
 .hero-title {
@@ -11,7 +11,7 @@
   margin-bottom: 2.25rem;
   font-weight: 400;
   font-size: 1.5rem;
-  color: #000;
+  /* color: #000; */
   text-align: center;
 }
 .hero-title::after {
@@ -19,14 +19,14 @@
   display: block;
   width: 33.5rem;
   height: 0.125rem;
-  background-color: #000;
+  /* background-color: #000; */
   margin: 2.25rem auto;
 }
 .section-title {
   margin-bottom: 2.25rem;
   font-weight: 400;
   font-size: 1rem;
-  color: #000;
+  /* color: #000; */
   text-align: center;
 }
 .game-block {
