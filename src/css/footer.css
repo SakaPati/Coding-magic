@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
-  margin-right: 11.687rem;
+  margin-right: 156px;
   margin-left: 11.562rem;
 }
 
@@ -56,15 +56,16 @@
   height: 35px;
   color: var(--BtnText);
   background-color: var(--BtnBg);
+  border: none;
   border-radius: 20px;
   padding: 10px;
-  margin-left: 2.25rem;
+  margin-left: 2.0625rem;
 }
 
 .subscribe-rules {
   font-family: 'Montserrat Alternates';
   font-weight: 400;
   font-size: 6px;
-  color: #000;
+  /* color: #000; */
   margin-top: 1.125rem;
 }
