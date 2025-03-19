@@ -6,12 +6,19 @@
   background-color: #000;
   margin: 2.25rem auto;
 }
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
 .section-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 16rem;
-  margin: 2.25rem auto;
+  margin: 2.25rem 6.5rem 2.25rem 13rem;
 }
 .section-item {
   display: flex;
@@ -38,4 +45,14 @@
   color: #fff;
   border: none;
   height: 2.1875rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.correctness {
+  display: block;
+  margin-top: 2.25rem;
+  font-size: 0.75rem;
+  text-align: center;
 }
