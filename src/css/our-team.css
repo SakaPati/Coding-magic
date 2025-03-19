@@ -3,7 +3,7 @@
   display: block;
   width: 33.5rem;
   height: 0.125rem;
-  background-color: #000;
+  /* background-color: #000; */
   margin: 2.25rem auto;
 }
 .team-container {
@@ -18,7 +18,7 @@
 }
 .team-list {
   display: flex;
-  margin: auto 20.5rem;
+  /* margin: auto 20.5rem; */
 }
 .team-item {
   transform: translateX(200%);
@@ -38,13 +38,13 @@
   margin-bottom: 1.25rem;
   text-align: center;
   font-size: 0.88rem;
-  color: #000;
+  /* color: #000; */
 }
 .work {
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 0.75rem;
-  color: #000;
+  /* color: #000; */
 }
 .next-icons {
   display: flex;

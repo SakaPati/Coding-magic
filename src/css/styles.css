@@ -7,6 +7,7 @@
 @import url('./reset.css');
 @import url('./footer.css');
 @import url('./colors.css');
+@import url('./theme.css');
 
 @import url('./welcomeModal.css');
 @import url('./erorWindow.css');
@@ -24,12 +25,19 @@
 @import url('./our-team.css');
 @import url('./scientists.css');
 
+html {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  width: 90rem;
+  margin: 0 auto;
+ } /* так и должно быть не трогай */
+
 :root {
   --font-family: 'Montserrat Alternates', sans-serif;
   --second-family: 'Inter', sans-serif;
   --third-family: 'Sacramento', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
 
   color: #242424;
@@ -45,9 +53,9 @@
 body {
   font-family: var(--font-family);
 }
+
 .container {
-  width: 90rem;
+  width: 68.125rem;
   margin: 0 auto;
   padding: 0 0.938rem;
-  /* outline: 1px solid red; */
 }

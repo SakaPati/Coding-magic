@@ -3,7 +3,7 @@
   display: block;
   width: 33.5rem;
   height: 0.125rem;
-  background-color: #000;
+  /* background-color: #000; */
   margin: 2.25rem auto;
 }
 .b-list {
@@ -28,6 +28,6 @@
 .result-num {
   margin-top: 2.25rem;
   font-size: 0.75rem;
-  color: #000;
+  /* color: #000; */
   text-align: center;
 }
