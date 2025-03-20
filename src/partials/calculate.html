@@ -4,35 +4,52 @@
     <div class="section-block calculate-block">
       <input
         type="text"
-        id="number"
+        id="first-number"
         placeholder="Введіть число"
         class="calculate-input"
       />
+
       <ul class="calculate-list">
         <li class="calculate-item">
-          <button type="button" class="calculate-opparation">+</button>
+          <button type="button" class="calculate-opparation" id="plus">
+            +
+          </button>
         </li>
         <li class="calculate-item">
-          <button type="button" class="calculate-opparation">*</button>
+          <button
+            type="button"
+            class="calculate-opparation"
+            id="multiplication"
+          >
+            *
+          </button>
         </li>
         <li class="calculate-item">
-          <button type="button" class="calculate-opparation">-</button>
+          <button type="button" class="calculate-opparation" id="minus">
+            -
+          </button>
         </li>
         <li class="calculate-item">
-          <button type="button" class="calculate-opparation">/</button>
+          <button type="button" class="calculate-opparation" id="division">
+            /
+          </button>
         </li>
       </ul>
+
       <input
         type="text"
-        id="number"
         placeholder="Введіть число"
         class="calculate-input"
+        id="second-num"
       />
-      <button type="button" class="calculate-opparation result">=</button>
+      <button type="button" class="calculate-opparation result" id="equally">
+        =
+      </button>
       <input
         type="text"
         placeholder="Результат"
-        class="calculate-input result-input"
+        class="calculate-input"
+        id="result-input"
       />
     </div>
   </div>

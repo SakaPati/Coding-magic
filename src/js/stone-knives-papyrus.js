@@ -24,7 +24,6 @@ refs.scissors.addEventListener('click', () => {
   if (currentChoose == refs.compVariant) {
     console.log('Draw');
   } else if (refs.compVariant == refs.paper) {
-    // scoreHuman += 1;
     refs.human.textContent = ++scoreHuman;
     console.log(scoreHuman);
     refs.correctness.style.color = '#039900';
@@ -32,7 +31,6 @@ refs.scissors.addEventListener('click', () => {
 
     console.log('You win, robot chose paper');
   } else if (refs.compVariant == refs.stone) {
-    // scoreRobot += 1;
     refs.robot.textContent = ++scoreRobot;
     console.log(scoreRobot);
     refs.correctness.style.color = '#900';
@@ -48,7 +46,6 @@ refs.paper.addEventListener('click', () => {
   if (currentChoose == refs.compVariant) {
     console.log('Draw');
   } else if (refs.compVariant == refs.scissors) {
-    // scoreRobot += 1;
     refs.robot.textContent = ++scoreRobot;
     console.log(scoreRobot);
     refs.correctness.style.color = '#900';
@@ -56,7 +53,6 @@ refs.paper.addEventListener('click', () => {
 
     console.log('You lose, robot chose scissors');
   } else if (refs.compVariant == refs.stone) {
-    // scoreHuman += 1;
     refs.human.textContent = ++scoreHuman;
     console.log(scoreHuman);
     refs.correctness.style.color = '#039900';
@@ -68,25 +64,23 @@ refs.paper.addEventListener('click', () => {
 
 refs.stone.addEventListener('click', () => {
   currentChoose = refs.stone;
-
+  // refs.compVariant -- компьютер
   if (currentChoose == refs.compVariant) {
     console.log('Draw');
   } else if (refs.compVariant == refs.scissors) {
-    // scoreRobot += 1;
-    refs.robot.textContent = ++scoreRobot;
-    console.log(scoreRobot);
-
-    refs.correctness.style.color = '#900';
-    refs.correctness.textContent = 'Комп’ютер виграв раунд!!';
-
-    console.log('You win, robot chose scissors');
-  } else if (refs.compVariant == refs.paper) {
-    scoreRobot += 1;
     refs.human.textContent = scoreHuman++;
     console.log(scoreHuman);
 
     refs.correctness.style.color = '#039900';
     refs.correctness.textContent = 'Ви вийграли раунд';
+
+    console.log('You win, robot chose scissors');
+  } else if (refs.compVariant == refs.paper) {
+    refs.robot.textContent = ++scoreRobot;
+    console.log(scoreRobot);
+
+    refs.correctness.style.color = '#900';
+    refs.correctness.textContent = 'Комп’ютер виграв раунд!!';
   }
 });
 randomVariant();
