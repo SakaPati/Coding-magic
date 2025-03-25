@@ -1,15 +1,12 @@
-/* .team-item:nth-child(2), */
-.team-item:nth-child(3),
-.team-item:nth-child(4),
-.team-item:nth-child(5) {
+.team-item{
   opacity: 0;
 }
 
-.team-item.left{
-    transform: translateX(100%);
-    opacity: 1;
+.team-item.hidden{
+  transition: transform 1000ms, opacity 1000ms;
 }
-.team-item.right{
-    transform: translateX(0%);
-    opacity: 0;
+.team-item.visible{
+  transform: translateX(200%);
+  opacity: 1;
+  transition: opacity 1000ms;
 }
