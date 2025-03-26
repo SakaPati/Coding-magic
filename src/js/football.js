@@ -1,16 +1,12 @@
 const ball = document.querySelector('.football-ball');
 const cursor = document.querySelector('.football-cursor');
 const field = document.querySelector('.field');
-cursor.addEventListener('mouseover', () => {
-  document.addEventListener('mousemove', event => {
-    const fieldStyles = getComputedStyle(field);
-    const fieldX = field.offsetLeft + parseFloat(fieldStyles.borderLeftWidth);
-    const fieldY = field.offsetTop + parseFloat(fieldStyles.borderTopWidth);
-    cursor.style.position = 'absolute';
-    cursor.style.left = `${event.pageX}px`;
-    cursor.style.top = `${event.pageY}px`;
-  });
+field.addEventListener('mousedown', event => {
+  const fieldRect = field.getBoundingClientRect();
+  const ballY = event.clientY - fieldRect.top - ball.offsetHeight / 2;
+  const ballX = event.clientX - fieldRect.left - ball.offsetWidth / 2;
+  ball.style.position = 'absolute';
+  field.style.position = 'relative';
+  ball.style.top = `${ballY}px`;
+  ball.style.left = `${ballX}px`;
 });
-
-console.log(ball);
-console.log(cursor);
