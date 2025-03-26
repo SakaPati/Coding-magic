@@ -7,6 +7,7 @@
   margin: 2.25rem auto;
 }
 .field {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,4 +17,13 @@
   border: 2px solid #000;
   border-radius: 2.31rem;
   background: #5abb58;
+}
+.football-ball {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.football-cursor {
+  position: absolute;
+  right: 13.3125rem;
 }
