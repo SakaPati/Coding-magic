@@ -16,7 +16,7 @@
   height: 13.75rem;
   border: 2px solid #000;
   border-radius: 2.31rem;
-  background: #5abb58;
+  background-color: #5abb58;
 }
 .football-ball {
   transition-property: all;
