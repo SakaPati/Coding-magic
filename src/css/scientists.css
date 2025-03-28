@@ -10,7 +10,7 @@
 .scientists-cards {
   border-radius: 1.25rem;
   height: 6.25rem;
-  background: #d9d9d9;
+  background-color: #d9d9d9;
   flex-basis: calc((100% - 3 * 60px) / 4);
 }
 .scientists-cards:hover {
