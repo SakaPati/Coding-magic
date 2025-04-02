@@ -7,3 +7,4 @@ import { onActiveDarkThem } from './js/theme';
 import './js/calculate';
 import './js/football';
 import './js/carusel';
+import './js/cards';

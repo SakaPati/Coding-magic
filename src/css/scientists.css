@@ -12,7 +12,62 @@
   height: 6.25rem;
   background-color: #d9d9d9;
   flex-basis: calc((100% - 3 * 60px) / 4);
+  font-weight: 400;
+  font-size: 0.5rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #000;
 }
 .scientists-cards:hover {
   cursor: pointer;
+}
+.scientists-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 36.25rem;
+  margin: auto;
+  row-gap: 2.25rem;
+  column-gap: 3.75rem;
+}
+.scientists-cards {
+  border-radius: 1.25rem;
+  height: 6.25rem;
+  background-color: #d9d9d9;
+  flex-basis: calc((100% - 3 * 60px) / 4);
+}
+.scientists-cards:hover {
+  cursor: pointer;
+}
+.scientists-search {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+  column-gap: 2.25rem;
+  margin-top: 2.25rem;
+}
+.scientists-item {
+  flex-basis: calc((100% - 1 * 2.25rem) / 2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0.62rem;
+}
+.search-btn {
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.62rem 1.25rem;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.scientists-item:nth-child(odd) {
+  justify-content: flex-end;
+}
+#last-item {
+  margin: auto;
 }
