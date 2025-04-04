@@ -1,3 +1,9 @@
+.calculate-time .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .calculate-time::after {
   content: '';
   display: block;
@@ -8,8 +14,14 @@
 }
 .calculate-time-block {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 24.5rem;
+  margin-right: 3.75rem;
+}
+.input-wrap-Calc {
+  position: relative;
+  width: 9.375rem;
 }
 .time-input {
   padding-left: 0.625rem;
@@ -25,7 +37,7 @@
 .calculate-time-btn {
   position: absolute;
   top: 0;
-  right: 2.0625rem;
+  right: .0625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,4 +46,10 @@
   border: none;
   border-radius: 0 1.25rem 1.25rem 0;
   background-color: #000;
+}
+
+.calcResult {
+  font-weight: 400;
+  font-size: 12px;
+  /* margin-left: 2.0625rem; */
 }

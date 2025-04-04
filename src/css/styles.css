@@ -27,8 +27,8 @@
 
 html {
   background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  width: 90rem;
+  background-repeat: no-repeat;  
+  /* width: 90rem; */
   margin: 0 auto;
  } /* так и должно быть не трогай */
 
