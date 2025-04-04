@@ -289,6 +289,7 @@ function LongestAndShortesLife() {
 }
 
 function firstLetters() {
+  clearCards()
   let number = 1;
   // scientists.map(i => console.log(i.name[0]));
   scientists.map(a => {
