@@ -87,14 +87,25 @@ const scientists = [
 const refs = {
   first: document.querySelector('#first-btn'),
   two: document.querySelector('#two-btn'),
+  third: document.querySelector('#third-btn'),
   four: document.querySelector('#four-btn'),
+  fifth: document.querySelector('#fifth-btn'),
+  sixth: document.querySelector('#sixth-btn'),
+  seventh: document.querySelector('#seventh-btn'),
+  eigthth: document.querySelector('#eigthth-btn'),
+  ninth: document.querySelector('#ninth-btn'),
   list: document.querySelector('.scientists-list'),
   item: document.querySelector('.scientists-cards'),
 };
 refs.first.addEventListener('click', sortArray);
 refs.two.addEventListener('click', sortName);
+refs.third.addEventListener('click', amountOfYears);
 refs.four.addEventListener('click', sortYears);
-
+refs.fifth.addEventListener('click', findAlbertEinshtein);
+refs.sixth.addEventListener('click', surnames);
+refs.seventh.addEventListener('click', names);
+refs.eigthth.addEventListener('click', LongestAndShortesLife);
+refs.ninth.addEventListener('click', firstLetters);
 function sortArray() {
   clearCards();
   let number = 1;
@@ -165,6 +176,132 @@ function sortYears() {
     refs.list.childNodes[number].append(date);
     number += 2;
   }
+}
+
+function amountOfYears() {
+  clearCards();
+  let number = 1;
+  const scientistsWithAge = scientists
+    .map(scientist => ({ ...scientist, age: scientist.dead - scientist.born }))
+    .sort((a, b) => b.age - a.age)
+    .map(i => {
+      const text = document.createElement('p');
+      const date = document.createElement('span');
+      text.textContent = i.name + ' ' + i.surname;
+      date.textContent = i.born + '-' + i.dead;
+      refs.list.childNodes[number].append(text);
+      refs.list.childNodes[number].append(date);
+      number += 2;
+    });
+}
+
+function findAlbertEinshtein() {
+  clearCards();
+  let number = 1;
+  scientists.map(a => {
+    if (a.id == 1) {
+      const text = document.createElement('p');
+      const date = document.createElement('span');
+      text.textContent = a.name + ' ' + a.surname;
+      date.textContent = a.born + '-' + a.dead;
+      refs.list.childNodes[number].append(text);
+      refs.list.childNodes[number].append(date);
+    } else {
+      return false;
+    }
+  });
+}
+
+function surnames() {
+  clearCards();
+  let number = 1;
+  scientists.find(a => {
+    if (a.surname.includes('C')) {
+      const text = document.createElement('p');
+      const date = document.createElement('span');
+      text.textContent = a.name + ' ' + a.surname;
+      date.textContent = a.born + '-' + a.dead;
+      refs.list.childNodes[number].append(text);
+      refs.list.childNodes[number].append(date);
+      number += 2;
+    } else {
+      return false;
+    }
+    console.log();
+  });
+}
+
+function names() {
+  clearCards();
+  let number = 1;
+  scientists.sort(i => {
+    if (!i.name.includes('A')) {
+      const text = document.createElement('p');
+      const date = document.createElement('span');
+      text.textContent = i.name + ' ' + i.surname;
+      date.textContent = i.born + '-' + i.dead;
+      refs.list.childNodes[number].append(text);
+      refs.list.childNodes[number].append(date);
+      number += 2;
+    }
+  });
+}
+
+function LongestAndShortesLife() {
+  clearCards();
+  const scientistsWithAge = scientists.map(scientist => ({
+    ...scientist,
+    age: scientist.dead - scientist.born,
+  }));
+
+  const longestLived = scientistsWithAge.reduce((a, b) =>
+    a.age > b.age ? a : b
+  );
+  const shortestLived = scientistsWithAge.reduce((a, b) =>
+    a.age < b.age ? a : b
+  );
+
+  const longestText = document.createElement('p');
+  const longestDate = document.createElement('span');
+  longestText.textContent = longestLived.name + ' ' + longestLived.surname;
+  longestDate.textContent =
+    longestLived.born +
+    '-' +
+    longestLived.dead +
+    ' (' +
+    longestLived.age +
+    ' years)';
+  refs.list.childNodes[1].append(longestText);
+  refs.list.childNodes[1].append(longestDate);
+
+  const shortestText = document.createElement('p');
+  const shortestDate = document.createElement('span');
+  shortestText.textContent = shortestLived.name + ' ' + shortestLived.surname;
+  shortestDate.textContent =
+    shortestLived.born +
+    '-' +
+    shortestLived.dead +
+    ' (' +
+    shortestLived.age +
+    ' years)';
+  refs.list.childNodes[3].append(shortestText);
+  refs.list.childNodes[3].append(shortestDate);
+}
+
+function firstLetters() {
+  let number = 1;
+  // scientists.map(i => console.log(i.name[0]));
+  scientists.map(a => {
+    if (a.name[0] == a.surname[0]) {
+      const text = document.createElement('p');
+      const date = document.createElement('span');
+      text.textContent = a.name + ' ' + a.surname;
+      date.textContent = a.born + '-' + a.dead;
+      refs.list.childNodes[number].append(text);
+      refs.list.childNodes[number].append(date);
+      number += 2;
+    }
+  });
 }
 
 function clearCards() {
