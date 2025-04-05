@@ -1,29 +1,27 @@
 const refs = {
+ input : document.querySelector('.time-input'),
+ resultElement : document.querySelector('.calcResult'),
   calculateBtn: document.querySelector('.calculate-time-btn'),
 };
 
-refs.calculateBtn.addEventListener('click', () => {
-  const input = document.querySelector('.time-input').value;
-  const resultElement = document.querySelector('.calcResult');
-  const minutes = parseFloat(input);
+refs.calculateBtn.addEventListener('click', onButtonClick);
+
+  function onButtonClick(){
+  const minutes = parseFloat(refs.input.value);
 
   if (!isNaN(minutes) && minutes >= 0) {
-    const hours = minutes / 60;
-    resultElement.textContent = `${minutes} хвилин = ${hours.toFixed(2)} годин`;
+    const days = Math.floor(minutes / 1440)
+    const hours = Math.floor((minutes % 1440) / 60);
+    const remainingMinutes = ((minutes % (1440 * 60)) % 60);
+
+    refs.resultElement.textContent = `${days
+      .toString()
+      .padStart(2, '0')} дн. ${hours
+        .toString()
+        .padStart(2, '0')} год. : ${remainingMinutes
+          .toString()
+          .padStart(2, '0')} хв.`;
   } else {
-    resultElement.textContent = 'Будь ласка, введіть коректне число';
+    refs.resultElement.textContent = 'Будь ласка, введіть коректне число';
   }
-});
-
-// document.getElementById('calculate-btn').addEventListener('click', function () {
-//   const input = document.getElementById('number').value;
-//   const resultElement = document.getElementById('result');
-//   const minutes = parseFloat(input);
-
-//   if (!isNaN(minutes) && minutes >= 0) {
-//     const hours = minutes / 60;
-//     resultElement.textContent = `${minutes} хвилин = ${hours.toFixed(2)} годин`;
-//   } else {
-//     resultElement.textContent = 'Будь ласка, введіть коректне число';
-//   }
-// });
+}

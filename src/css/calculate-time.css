@@ -25,7 +25,7 @@
 }
 .time-input {
   padding-left: 0.625rem;
-  width: 9.38rem;
+  width: 10.9375rem;
   height: 2.19rem;
   border: none;
   border-radius: 1.25rem;
@@ -37,7 +37,7 @@
 .calculate-time-btn {
   position: absolute;
   top: 0;
-  right: .0625rem;
+  right: -1.5625rem;
   display: flex;
   justify-content: center;
   align-items: center;
