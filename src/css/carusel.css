@@ -1,0 +1,12 @@
+.team-item{
+  opacity: 0;
+}
+
+.team-item.hidden{
+  transition: transform 1000ms, opacity 1000ms;
+}
+.team-item.visible{
+  transform: translateX(200%);
+  opacity: 1;
+  transition: opacity 1000ms;
+}
