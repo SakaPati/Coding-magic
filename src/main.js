@@ -5,6 +5,7 @@ import { showEl } from './js/age';
 import { randomVariant } from './js/stone-knives-papyrus';
 import { onActiveDarkThem } from './js/theme';
 import './js/calculate';
+import './js/calculate-time';
 import './js/football';
 import './js/carusel';
 import './js/cards';
