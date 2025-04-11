@@ -9,3 +9,4 @@ import './js/calculate-time';
 import './js/football';
 import './js/carusel';
 import './js/cards';
+import './js/maxNumber';
