@@ -44,7 +44,7 @@ refs.paper.addEventListener('click', () => {
   currentChoose = refs.paper;
 
   if (currentChoose == refs.compVariant) {
-    console.log('Draw');
+    refs.correctness.textContent = 'Ничія';
   } else if (refs.compVariant == refs.scissors) {
     refs.robot.textContent = ++scoreRobot;
     console.log(scoreRobot);
@@ -64,9 +64,8 @@ refs.paper.addEventListener('click', () => {
 
 refs.stone.addEventListener('click', () => {
   currentChoose = refs.stone;
-  // refs.compVariant -- компьютер
   if (currentChoose == refs.compVariant) {
-    console.log('Draw');
+    refs.correctness.textContent = 'Ничія';
   } else if (refs.compVariant == refs.scissors) {
     refs.human.textContent = scoreHuman++;
     console.log(scoreHuman);
