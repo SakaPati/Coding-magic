@@ -22,7 +22,7 @@ refs.scissors.addEventListener('click', () => {
   currentChoose = refs.scissors;
 
   if (currentChoose == refs.compVariant) {
-    console.log('Draw');
+    refs.correctness.textContent = 'Ничія';
   } else if (refs.compVariant == refs.paper) {
     refs.human.textContent = ++scoreHuman;
     console.log(scoreHuman);
