@@ -25,14 +25,11 @@
 @import url('./biggest-num.css');
 @import url('./our-team.css');
 @import url('./scientists.css');
-
 html {
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;  
-  /* width: 90rem; */
-  margin: 0 auto;
- } /* так и должно быть не трогай */
+  background: url('../img/background.jpg') no-repeat center;
 
+  margin: 0 auto;
+}
 :root {
   --font-family: 'Montserrat Alternates', sans-serif;
   --second-family: 'Inter', sans-serif;
