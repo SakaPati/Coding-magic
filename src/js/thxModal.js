@@ -4,11 +4,12 @@ const refs = {
   closeModal: document.querySelector('[data-action="closeThxModal"]'),
 };
 
-let inputValue = 0;
-
 refs.subscribeBtn.addEventListener('click', onOpenThxModal);
-export function onOpenThxModal() {
-  if (inputValue < 9) {
+export function onOpenThxModal(e) {
+  console.log(inputValue);
+  e.preventDefault();
+  const inputValue = refs.emailInput.value;
+  if (!inputValue.includes('@')) {
     alert('Напишите почту');
   } else {
     document.body.classList.add('thx-modal');
@@ -19,9 +20,4 @@ refs.closeModal.addEventListener('click', onCloseThxModal);
 function onCloseThxModal() {
     document.body.classList.remove('thx-modal');
     refs.emailInput.value = ""
-}
-
-refs.emailInput.addEventListener('input', onSubmiteEmail);
-function onSubmiteEmail(e) {
-  inputValue = e.currentTarget.value.length;
 }
