@@ -5,9 +5,9 @@ const refs = {
 };
 
 refs.subscribeBtn.addEventListener('click', onOpenThxModal);
-export function onOpenThxModal(e) {
+export function onOpenThxModal(event) {
   console.log(inputValue);
-  e.preventDefault();
+  event.preventDefault();
   const inputValue = refs.emailInput.value;
   if (!inputValue.includes('@')) {
     alert('Напишите почту');
