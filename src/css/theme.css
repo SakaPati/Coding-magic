@@ -1,4 +1,7 @@
 body {
+  background: url('../img/bg-image.png') no-repeat center;
+  background-color: rgba(189, 189, 189, 0.3);
+  font-family: var(--font-family);
   transition: background-color 1000ms;
 }
 
@@ -6,7 +9,14 @@ body.DarkTheme {
   background-color: #4a4f53;
   transition: background-color 1000ms;
 }
-
+body.DarkTheme header {
+  background-color: #4a4f53;
+  border-bottom: 1px solid white;
+}
+body.DarkTheme footer {
+  background-color: #4a4f53;
+  border-bottom: 1px solid white;
+}
 body section::after,
 body h1::after {
   background-color: black;

@@ -1,19 +1,11 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./footer.css');
-@import url('./colors.css');
 @import url('./theme.css');
+@import url('./reset.css');
+@import url('./colors.css');
 
 @import url('./welcomeModal.css');
 @import url('./erorWindow.css');
 
 @import url('./thxModal.css');
-
 @import url('./header.css');
 @import url('./carusel.css');
 @import url('./hero.css');
@@ -25,8 +17,9 @@
 @import url('./biggest-num.css');
 @import url('./our-team.css');
 @import url('./scientists.css');
+@import url('./footer.css');
+
 html {
-  background: url('../img/background.jpg') no-repeat center;
   margin: 0 auto;
 }
 :root {
@@ -45,10 +38,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  font-family: var(--font-family);
 }
 
 .container {
