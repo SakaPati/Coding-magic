@@ -1,5 +1,5 @@
 // Загрузка модалки после загрузки страницы
-// window.addEventListener('load', onOpenModal);
+window.addEventListener('load', onOpenModal);
 
 // переменные
 const refs = {
