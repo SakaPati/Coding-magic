@@ -6,7 +6,6 @@ const refs = {
 
 refs.subscribeBtn.addEventListener('click', onOpenThxModal);
 export function onOpenThxModal(event) {
-  console.log(inputValue);
   event.preventDefault();
   const inputValue = refs.emailInput.value;
   if (!inputValue.includes('@')) {
