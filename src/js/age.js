@@ -5,10 +5,13 @@ const refs = {
 };
 refs.result.addEventListener('click', showEl);
 function showEl() {
-  if (refs.age.value % 100 === 0 && refs.age.value % 400 !== 0) {
+  if (
+    (refs.age.value % 100 == 0 && refs.age.value % 4 != 0) ||
+    refs.age.value % 400 == 0
+  ) {
     refs.successText.style.color = '#900';
     refs.successText.textContent = `Ви народилися не у високосний рік!`;
-  } else if (refs.age.value % 100 === 0 && refs.age.value % 400 === 0) {
+  } else if (refs.age.value % 100 === 0 && refs.age.value % 4 === 0) {
     refs.successText.style.color = '#039900';
     refs.successText.textContent = `Ви народилися у високосний рік!`;
   } else {
