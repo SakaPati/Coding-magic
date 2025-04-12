@@ -1,3 +1,7 @@
+.scientists {
+  padding-bottom: 2.25rem;
+}
+
 .scientists-list {
   display: flex;
   flex-wrap: wrap;
