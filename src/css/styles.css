@@ -27,7 +27,6 @@
 @import url('./scientists.css');
 html {
   background: url('../img/background.jpg') no-repeat center;
-
   margin: 0 auto;
 }
 :root {

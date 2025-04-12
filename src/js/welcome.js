@@ -18,7 +18,7 @@ let inputValue = 0;
 // открытие модалки
 function onOpenModal() {
   document.body.classList.add('show-modal');
-  window.addEventListener('keydown', onEscKeyPress);
+  window.addEventListener('keydown', onEscCloseModal);
 }
 
 // закрытие модалки
@@ -48,7 +48,6 @@ function onBackdropCloseModal(e) {
     onModalClose();
   }
 }
-
 
 // Вывод ошибки
 function onErorWindow() {
@@ -99,7 +98,7 @@ function onSaveUserName() {
     onErorWindow();
   } else {
     refs.userName.textContent = userName;
-    alert("Данные сохранены")
+    alert('Данные сохранены');
     document.body.classList.remove('show-modal');
   }
 }
